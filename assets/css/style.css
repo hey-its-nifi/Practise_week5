@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+}
+
+.navbar{
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.nav{
+    padding: 5px 0;
+    width: 80%;
+    margin: auto;
+}
+
+.menu li{
+text-transform: uppercase;
+float: right;
+list-style-type: none;
+margin-right: 20px;
+font-size: 14px;
+color: #cbcbcb;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    display: block;
+    padding-bottom: 10px;
+}
+
+.hero{
+    background-image: url(/assets/images/hero.jpg);
+    height: 650px;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.hero-wrapper{
+    height: 600px;
+}
+
+.uni-logo{
+    margin-top: 100px;
+}
+
+.hero-title{
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.search-wrapper{
+    height: fit-content;
+    margin-bottom: 30px;
+}
+
+.search-bar{
+    width: 300px;
+    height: 20px;
+    border: none;
+    padding: 0;
+}
+
+.search-btn{
+    height: 20px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    margin-left: -5px;
+}
+
+.action-btn{
+    display: block;
+    margin-top: 10px;
+    width: 180px;
+    border: 1px solid white;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+    left: 40%;
+}
+
+.banner-hi{
+    background-color: #87d37c;
+    color: #fff;
+    width: fit-content;
+    padding: 10px;
+    height: 30px;
+    position: relative;
+    bottom: 0;
+    left: 45%;
+    border-radius: 8px;
+    font-size: 24px;
+    font-family:'Gochi Hand', cursive
+}
+.banner-hi:after{
+    content: "";
+    position: absolute;
+    bottom: -36px;
+    width: 28px;
+    height:37px;
+    background-image: url("../images/icon.png");
+    left: 40%;
+}
+
+.demo{
+    width: 200px;
+    height: 200px;
+    background-color: #87d37c;
+}
+
+@media (max-width: 768px){
+    .demo{
+        background-color: aqua;
+    }
+
+}
+
+@media (max-width : 600px){
+    .demo{
+        background-color: rgb(76, 40, 143);
+    }
+
+}
