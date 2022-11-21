@@ -15,13 +15,17 @@
     <header>
         <nav class="navbar">
             <div class="nav">
-                <ul class="menu">
+                <ul class="menu desktop-menu">
                     <li>Home</li>
                     <li>Demo</li>
                     <li>Pages</li>
                     <li>Blog</li>
                     <li>Contact</li>
                 </ul>
+               <button id="menu-btn" class="mobile">
+                <i class="fa-solid fa-bars menu-icon"></i>
+               </button>
+                
             </div>
         </nav>
     </header>
@@ -45,8 +49,33 @@
         <div class="banner-hi">Hi there</div>
     </section>
 
-    <div class="demo">
-        
+    <div id="mobileMenu" class="mobile">
+        <ul class="mobile-menu">
+            <li>Home</li>
+            <li>Demo</li>
+            <li>Pages</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+
+        <button id="closeBtn" >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
     </div>
+    <script>
+        let menuBtn = document.getElementById('menu-btn');
+        let closeBtn = document.getElementById('closeBtn');
+        let mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click',() =>{
+            mobileMenu.classList.add('active')
+        })
+
+        closeBtn.addEventListener('click',() => {
+            mobileMenu.classList.remove('active')
+        })
+    </script>
+ 
 </body>
+
 </html>

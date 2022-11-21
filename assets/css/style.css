@@ -115,22 +115,80 @@ font-family: Arial, Helvetica, sans-serif;
     left: 40%;
 }
 
-.demo{
-    width: 200px;
-    height: 200px;
-    background-color: #87d37c;
+#menu-btn{
+    background-color: transparent;
+    border: none;
+    float: right;
+}
+
+.menu-icon{
+    color: #fff;
+    margin: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.mobile{
+    display: none;
+}
+
+#mobileMenu{
+    width:80%;
+   
+    background-color:#87d37c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    
+    
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+
+}
+
+#mobileMenu.active{
+    opacity: 1;
+    height: 100vh;
+}
+
+#closeBtn{
+background-color: transparent;
+border: none;
+position: absolute;
+top: 0;
+right: 0;
+margin: 10px;
+font-size: 25px;
+}
+
+.mobile-menu{
+    margin: 0;
+    margin-block-start: 0;
+    padding-inline-start: 0;    
+    margin-top: 25px;
+}
+
+.mobile-menu li{
+        text-transform: uppercase;
+        list-style-type: none;
+        margin-right: 20px;
+        font-size: 25px;
+        color: #202020;
+        padding: 15px;
+        border-bottom: 1px solid black;
+        font-family: Arial, Helvetica, sans-serif;
+       
 }
 
 @media (max-width: 768px){
-    .demo{
-        background-color: aqua;
-    }
+   .desktop-menu{
+    display: none;
+   }
 
-}
-
-@media (max-width : 600px){
-    .demo{
-        background-color: rgb(76, 40, 143);
-    }
-
+   .mobile{
+    display: block;
+   }
 }
