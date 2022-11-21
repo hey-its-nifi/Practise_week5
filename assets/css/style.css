@@ -33,7 +33,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .hero{
-    background-image: url(/assets/images/hero.jpg);
+    background-image: url(/assets/images/hero.JPG);
     height: 650px;
     background-size: cover;
     text-align: center;
@@ -111,7 +111,7 @@ font-family: Arial, Helvetica, sans-serif;
     bottom: -36px;
     width: 28px;
     height:37px;
-    background-image: url("../images/icon.png");
+    background-image: url("../images/icon.PNG");
     left: 40%;
 }
 
