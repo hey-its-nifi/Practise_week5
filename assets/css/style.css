@@ -235,6 +235,18 @@ text-align: center;
     margin: auto;
 }
 
+.students-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.students-col{
+    display: inline-grid;
+}
+
+.students-img{
+    width: 100%;
+}
 
 @media (max-width: 768px){
    .desktop-menu{
