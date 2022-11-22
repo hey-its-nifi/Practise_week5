@@ -210,13 +210,17 @@ font-size: 25px;
 .featured-grid{
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+
 }
 
 .featured-grid .features{
     display: inline-grid;
-text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .feature-icon{
@@ -225,14 +229,17 @@ text-align: center;
     height: 100px;
     border-radius: 50%;
     color: #87d37c;
-    display: flex;
-    margin: auto;
     font-size: 25px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.feature-icon i{
-    margin: auto;
+
+
+#students{
+background-color: #f7f7f7;
+
 }
 
 .students-grid{
